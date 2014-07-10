@@ -11,7 +11,7 @@
 			margin:0;
 			font-family:'Lato', sans-serif;
 			text-align:center;
-			color: #999;
+			color: #FFF;
 		}
 
 		.panel-top{
@@ -29,9 +29,16 @@
 			font-size: 32px;
 		}
 		.panel-one{
-			background-image: url(images/Carson-Emmett1280x853.jpg);
-			background-repeat: no-repeat;
-			height: 853px;
+			height: 920px;
+		}
+		.content-one{
+			margin-top: 430px;
+		}
+		.panel-two{
+			height: 910px;
+		}
+		.panel-three{
+			color: #000;
 		}
 	</style>
 
@@ -50,8 +57,33 @@
 			</ul>			
 		</div>
 	</div>
+
 	<div class="container-fluid panel-one">
+		<div class="col-md-6 col-md-offset-5 content-one">
+			<h2>Welcome to Peurto Rico</h2>
+		</div>
 	</div>
+
+	<div class="container-fluid panel-two">
+		<div class="col-md-6 speaker-one"></div>
+		<div class="col-md-6 speaker-two"></div>
+	</div>	
+
+	<div class="container-fluid panel-three">
+		<div class="col-md-3">
+			<h3>Thursday, October 30, 2014</h3>
+		</div>
+		<div class="col-md-3">
+			<h3>Friday, October 30, 2014</h3>			
+		</div>
+		<div class="col-md-3">
+			<h3>Friday, October 30, 2014</h3>			
+		</div>
+		<div class="col-md-3">
+			<h3>Saturday, October 30, 2014</h3>			
+		</div>
+	</div>
+
 </body>
 </html>
 
@@ -59,3 +91,10 @@
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>	
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>	
 <script type="text/javascript" src="javascript/jquery.vegas.min.js"></script>	
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".panel-one").backstretch('images/AFP_140402_LeadershipAcademyWebsite_02.png');
+		$(".panel-two").backstretch('images/speaker_one.jpg');
+	});
+</script>
