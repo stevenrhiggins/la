@@ -20,6 +20,9 @@
 			height: 140px;
 			color: #fffefe;
 		}
+/*div { width: 300px; }*/
+ul li { float: left; border-right: 1px solid black; padding: 0 .5em; }
+ul li:last-child { border: 0; }	
 		.text-left{
 			text-align: left;
 			margin-top: 50px;
@@ -57,7 +60,7 @@
 
 </head>
 <body>
-	<div class="container-fluid panel-top">
+<!-- 	<div class="container-fluid panel-top">
 		<div class="col-md-6 text-left">Presented by</div>
 		<div class="col-md-6 text-right">
 			<ul class="nav nav-pills">
@@ -68,7 +71,34 @@
 			  <li><a href="#">Register</a></li>
 			</ul>			
 		</div>
-	</div>
+	</div> -->
+
+
+<nav class="navbar navbar-default panel-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      Presented by
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+		  <li class="active"><a href="#">Home</a></li>
+		  <li><a href="#">Speakers</a></li>
+		  <li><a href="#">Schedule</a></li>
+		  <li><a href="#">Location</a></li>
+		  <li><a href="#">Register</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>	
 
 	<div class="container-fluid panel-one">
 		<div class="col-md-9 content-one text-right">
@@ -106,11 +136,11 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>	
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>	
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>	
-<script type="text/javascript" src="javascript/jquery.vegas.min.js"></script>	
+<script type="text/javascript" src="javascript/jquery.anystretch.min.js"></script>	
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		$(".panel-one").backstretch('images/AFP_140402_LeadershipAcademyWebsite_02.png');
-		$(".panel-two").backstretch('images/speaker_one.jpg');
+		$(".panel-one").anystretch('images/AFP_140402_LeadershipAcademyWebsite_02.png');
+		$(".panel-two").anystretch('images/speaker_one.jpg');
 	});
 </script>

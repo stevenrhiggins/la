@@ -1105,7 +1105,7 @@ p {
 .lead {
   margin-bottom: 20px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
@@ -3769,12 +3769,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
+  margin-bottom: 0px;
+  /*border: 1px solid transparent;*/
 }
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 4px;
+    border-radius: 0px;
   }
 }
 @media (min-width: 768px) {
@@ -3925,11 +3925,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-nav {
   margin: 7.5px -15px;
+  padding-left: 970px;
 }
+
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px;
+  line-height: 30px;
+  font-size: 28px;
+  text-transform: uppercase;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -3957,14 +3961,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-nav {
     float: left;
-    margin: 0;
+    margin: 30px 0;
   }
   .navbar-nav > li {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .navbar-nav.navbar-right:last-child {
     margin-right: -15px;
@@ -4104,21 +4108,24 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-text {
-  color: #777;
+  color: #FFF;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #FFF;
+  font-weight: 400;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
+  color: yellow;
   background-color: transparent;
+  font-weight: 700;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
+  color: yellow;
+  font-weight: 700;
+  /*background-color: #e7e7e7;*/
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
