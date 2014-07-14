@@ -101,7 +101,7 @@ ul li:last-child { border: 0; }
 			</div>
 			<div class="col-md-12 text-center">
 				<h1>Welcome to Puerto Rico</h1>
-				<div class="col-md-2"></div>
+				<div class="col-md-2"></div> 
 				<div class="col-md-8">
 					<div class="content-one-text text-center">In its eighth year, the 2014 Leadership Academy is an opportunity for you to enrich your career and enhance your leadership skills. We'll inspire you to reach new heights with AFP and within the profession, while engaging with other AFP members. Leadership Academy is a members-only event and a benefit for leaders within the AFP community.<br>We look forward to seeing you in Puerto Rico in October!</div>
 				</div>
