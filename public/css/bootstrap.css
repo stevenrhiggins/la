@@ -3925,7 +3925,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-nav {
   margin: 7.5px -15px;
-  padding-left: 970px;
+  /*padding-left: 970px;*/
 }
 
 .navbar-nav > li > a {
@@ -4118,7 +4118,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a:focus {
   color: yellow;
   background-color: transparent;
-  font-weight: 700;
+  /*font-weight: 700;*/
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,

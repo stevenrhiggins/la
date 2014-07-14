@@ -33,16 +33,10 @@ ul li:last-child { border: 0; }
 			font-size: 32px;
 		}
 		.panel-one{
-			height: 920px;
-		}
-		.content-one{
-			margin-top: 410px;	
-			margin-left: 75px;
+			min-height: 920px;
 		}
 		.content-one-text{
-			font-size: 22.5px;
-			width: 765px;
-			margin-left: 20px;
+			font-size: 25px;
 			padding: none;
 		}
 		.panel-two{
@@ -88,7 +82,7 @@ ul li:last-child { border: 0; }
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
 		  <li class="active"><a href="#">Home</a></li>
 		  <li><a href="#">Speakers</a></li>
@@ -101,10 +95,20 @@ ul li:last-child { border: 0; }
 </nav>	
 
 	<div class="container-fluid panel-one">
-		<div class="col-md-9 content-one text-right">
-			<h1>Welcome to Puerto Rico</h1>
-			<div class="row">
-				<div class="col-md-5 col-md-8-offset content-one-text pull-right">In its eighth year, the 2014 Leadership Academy is an opportunity for you to enrich your career and enhance your leadership skills. We'll inspire you to reach new heights with AFP and within the profession, while engaging with other AFP members. Leadership Academy is a members-only event and a benefit for leaders within the AFP community.<br>We look forward to seeing you in Puerto Rico in October!</div>
+		<div class="container">
+			<div style="margin-top: 70px;">
+				<img src="/images/leadership_logo.png" class="pull-left img-responsive" style="margin-bottom: 160px">
+			</div>
+			<div class="col-md-12 text-center">
+				<h1>Welcome to Puerto Rico</h1>
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<div class="content-one-text text-center">In its eighth year, the 2014 Leadership Academy is an opportunity for you to enrich your career and enhance your leadership skills. We'll inspire you to reach new heights with AFP and within the profession, while engaging with other AFP members. Leadership Academy is a members-only event and a benefit for leaders within the AFP community.<br>We look forward to seeing you in Puerto Rico in October!</div>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+			<div class="col-md-12">
+				<img src="/images/relationship_science.png" class="pull-left img-responsive">
 			</div>
 		</div>
 	</div>
@@ -140,7 +144,7 @@ ul li:last-child { border: 0; }
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		$(".panel-one").anystretch('images/AFP_140402_LeadershipAcademyWebsite_02.png');
+		$(".panel-one").anystretch('images/panel_one_bkg_image.png', {speed: 150});
 		$(".panel-two").anystretch('images/speaker_one.jpg');
 	});
 </script>
